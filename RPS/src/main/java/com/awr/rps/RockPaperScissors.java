@@ -67,37 +67,41 @@ public class RockPaperScissors {
             // if else if statements to determine winner and track score
             if (compmove == usermove){
                 ties += 1;
-                System.out.println( "Tied");
+                System.out.println( "Tied this round");
             } else if (compmove == 1 && usermove == 2){
                 uwin += 1;
-                System.out.println( "User Wins");
+                System.out.println( "User Wins this roun");
             } else if (compmove == 1 && usermove == 3){
                 cwin += 1;
-                System.out.println( "Computer Wins");
+                System.out.println( "Computer Wins this roun");
             } else if (compmove == 2 && usermove == 1){
                 cwin += 1;
-                System.out.println( "Computer Wins");
+                System.out.println( "Computer Wins this roun");
             } else if (compmove == 2 && usermove == 3){
                 uwin += 1;
-                System.out.println( "User Wins");
+                System.out.println( "User Wins this roun");
             } else if (compmove == 3 && usermove == 1){
                 cwin += 1;
-                System.out.println( "Computer Wins");
+                System.out.println( "Computer Wins this round");
             } else if (compmove == 3 && usermove == 2){
                 uwin += 1;
-                System.out.println( "User Wins");
+                System.out.println( "User Wins this round");
             }
-            System.out.println(uwin + " " + cwin + " " + ties);              
+                          
             //if else if statements to determine overall winner
-            if (ties >= cwin && ties >= uwin){
-                System.out.println("It's a tie");
-            } else if (cwin >= ties && cwin >= uwin){
-                System.out.println("Computer Wins");
-            } else if (uwin >= cwin && uwin >= ties){
-                System.out.println("You win");
-            }
             
         }
+        
+        if (cwin == uwin){
+            System.out.println("It's a tie");
+        } else if (cwin >= uwin){
+            System.out.println("Computer wins the game");
+        } else if (uwin >= cwin){
+            System.out.println("You win the game");
+        }
+        System.out.println("User won " + uwin + " times");
+        System.out.println("Computer won " + cwin + " times");
+        System.out.println("There were " + ties + " ties");
        
     }
     
