@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.Random;
 /**
  *
- * @author Frizbeee
+ * @author Abdul Rizvi
  */
 public class RockPaperScissors {
     
@@ -44,7 +44,7 @@ public class RockPaperScissors {
         }
         
     }
-    // Method for the game involving parameter
+    // Method for the game involving parameter for number of rounds
     public static void playRPS1(int rounds){
         // Initialise scanner, random and variables.
         Scanner input = new Scanner(System.in);
